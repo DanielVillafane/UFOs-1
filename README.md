@@ -1,4 +1,4 @@
-# UFOs
+# UFOs (Deprecated)
 
 A UFO sightings themed webpage featuring a d3.js created data table with various filtering options.
 
