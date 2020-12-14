@@ -5,7 +5,6 @@ var tbody = d3.select("tbody");
 var reset_table = d3.select("#reset_table");
 
 filter_btn.on("click", function() {
-
     d3.event.preventDefault();
     tbody.selectAll("td").remove();
     
@@ -16,7 +15,6 @@ filter_btn.on("click", function() {
     var shape = d3.select("#shape").property("value");
     var filter = "var filtered_table = tableData";
     
-
     if(datetime) { filter = filter.concat(".filter(sighting => sighting.datetime === datetime)"); }
     if(city) { filter = filter.concat(".filter(sighting => sighting.city === city)"); }
     if(state) { filter = filter.concat(".filter(sighting => sighting.state === state)"); }
